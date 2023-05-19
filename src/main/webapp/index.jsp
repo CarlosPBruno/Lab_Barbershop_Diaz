@@ -1,0 +1,363 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diaz Barbershop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="icon" type="image/png"href="images/diazlogoicono.png">
+    
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-responsive-style.css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/all-plugins.js"></script>
+    <script type="text/javascript" src="js/plugin-active.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".main-navigation" data-offset="150">
+<%
+		String mensaje = (String)request.getAttribute("msj");
+
+	%>
+    <section id="MainContainer">
+        <!-- Menú inicio -->
+        <header id="Header">
+            <nav class="main-navigation">
+                <div class="container clearfix">
+                    <div class="site-logo-wrap">
+                        <a class="logo"><img src="images/diazlogotexto.png" alt="Design Studio"></a>
+                    </div>
+                    <a href="javascript:void(0)" class="menu-trigger hidden-lg-up"><span>&nbsp;</span></a>
+                    <div class="main-menu hidden-md-down">
+                        <ul class="menu-list">
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#HeroBanner">Inicio</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#Services">Servicios</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#Portfolio">Precios</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#ContactUs">Reserva</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#About">Conócenos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-menu hidden-lg-up">
+                    <ul class="mobile-menu-list">
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#HeroBanner">Inicio</a></li>
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#Services">Servicios</a></li>
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#Portfolio">Precios</a></li>
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#ContactUs">Reserva</a></li>
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#About">Conócenos</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Menú fin -->
+        
+        <!-- Banner inicio -->
+        <section id="HeroBanner">
+            <div class="hero-content">
+                <img fluid src="images/diazlogobt.png" class="img-fluid" alt="Design Studio"><br>
+
+                <a href="#ContactUs" class="hero-cta">Reserva Aquí</a>
+            </div>
+        </section>
+        <!-- Banner fin -->
+        
+        <!-- Servicios inicio-->
+        <section id="Services"><br>
+            <div class="container">
+                <div class="block-heading">
+                    <h2>Servicios</h2>
+                    
+                </div>
+                <div class="services-wrapper">
+                    <div class="each-service">
+                        <div class="service-icon"><i class="fa fa-scissors" aria-hidden="true"></i></div>
+                        <h5 class="service-title">Corte</h5>
+                        <p class="service-description">Póngase cómodo en una silla de barbero clásica y relájese mientras su barbero logra el aspecto deseado.</p>
+                    </div>
+                    <div class="each-service">
+                        <div class="service-icon"><i class="fa fa-eyedropper" aria-hidden="true"></i></div>
+                        <h5 class="service-title">Teñido</h5>
+                        <p class="service-description">Descubre las tendencias de color para el cabello de manos de nuestros barberos.</p>
+                    </div>
+                    <div class="each-service">
+                        <div class="service-icon"><i class="fa fa-link" aria-hidden="true"></i></div>
+                        <h5 class="service-title">Trenza</h5>
+                        <p class="service-description">Evita pasar calor y molestias en el rostro sobre todo si tienen el cabello bastante largo.</p>
+                    </div>
+                    <div class="each-service">
+                        <div class="service-icon"><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></div>
+                        <h5 class="service-title">Afeitado</h5>
+                        <p class="service-description">Afeitado que incluye una consulta sobre la piel, aceite pre-afeitado, toalla caliente y bálsamo para después del afeitado.</p>
+                    </div>
+                    <div class="each-service">
+                        <div class="service-icon"><i class="fa fa-shower" aria-hidden="true"></i></div>
+                        <h5 class="service-title">Lavado</h5>
+                        <p class="service-description">Un buen lavado de cabello con los productos adecuados garantizarán que todo el proceso de corte y cepillado sean perfectos.</p>
+                    </div>
+                    <div class="each-service">
+                        <div class="service-icon"><i class="fa fa-sign-language" aria-hidden="true"></i></div>
+                        <h5 class="service-title">Facial</h5>
+                        <p class="service-description">Relájese y limpie profundamente su piel con un tratamiento facial de limpieza.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Servicios fin -->
+        
+        <!-- Portfolio inicio -->
+        <section id="Portfolio"><br>
+            <div class="container">
+                <div class="block-heading">
+                    <h2>Precios</h2>
+                </div>
+                <div class="portfolio-wrapper clearfix">
+                    <a class="each-portfolio" data-fancybox="gallery" href="../images/corte.jpg">
+                    <img src="../images/corte.jpg" alt="p-one">
+                    <div class="hover-cont-wrap">
+                        <div class="hover-cont-block">
+                           <h5 class="p-title">Corte de Cabello</h5>
+                            <div class="p-desc">
+                            <br>
+                                <div><p class="lead">Corte de cabello a tijera y maquinas para público en general.</p>
+                                <p class="lead">Precio general: S/20.00</p>
+                                <p class="lead">Tiempo estimado: 45 min.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                    
+                    <a class="each-portfolio" data-fancybox="gallery" href="../images/teñido.jpg">
+                    <img src="../images/teñido.jpg" alt="p-one">
+                    <div class="hover-cont-wrap">
+                        <div class="hover-cont-block">
+                           <h5 class="p-title">Teñido de Cabello</h5>
+                           <div class="p-desc">
+                                <br>
+                                <div><p class="lead">Decoloración y teñido para el cabello.</p>
+                                <p class="lead">Precio desde: S/50.00</p>
+                                <p class="lead">Tiempo estimado: 1 h 30 min.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                   <a class="each-portfolio" data-fancybox="gallery" href="../images/trenzas.jpg">
+                    <img src="images/trenzas.jpg" alt="p-one">
+                    <div class="hover-cont-wrap">
+                        <div class="hover-cont-block">
+                           <h5 class="p-title">Trenzas</h5>
+                           <div class="p-desc">
+                                <br>
+                                <div><p class="lead"> Peinados para derrochar estilo y seguridad</p>
+                                <p class="lead">Precio general: S/50.00</p>
+                                <p class="lead">Tiempo estimado: 1 h 30 min.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                   <a class="each-portfolio" data-fancybox="gallery" href="../images/afeitado.png">
+                    <img src="../images/afeitado.png" alt="p-one">
+                    <div class="hover-cont-wrap">
+                        <div class="hover-cont-block">
+                           <h5 class="p-title">Afeitado de Barba</h5>
+                           <div class="p-desc">
+                           <br>
+                                <div><p class="lead">Corte y/o modelado de barba para público en general.</p>
+                                <p class="lead">Precio desde: S/12.00</p>
+                                <p class="lead">Tiempo estimado: 20 min.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="../images/lavado.jpeg">
+                    <img src="../images/lavado.jpeg" alt="p-one">
+                    <div class="hover-cont-wrap">
+                        <div class="hover-cont-block">
+                           <h5 class="p-title">Lavado de Cabello</h5>
+                           <div class="p-desc">
+                                <br>
+                                <div><p class="lead">Limpieza de cabello con un tratamiento capilar.</p>
+                                <p class="lead">Precio general: S/30.00</p>
+                                <p class="lead">Tiempo estimado: 30 mins.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="../images/facial.jpg">
+                    <img src="../images/facial.jpg" alt="p-one">
+                    <div class="hover-cont-wrap">
+                       <div class="hover-cont-block">
+                           <h5 class="p-title">Limpieza Facial</h5>
+                           <div class="p-desc">
+                                <br>
+                                <div><p class="lead">Limpieza de piel con un tratamiento facial.</p>
+                                <p class="lead">Precio general: S/10.00</p>
+                                <p class="lead">Tiempo estimado: 40 min.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                   </a>
+                    
+                </div>
+            </div>
+            
+        </section>
+        <!-- Portfolio fin -->
+        
+        <!-- Testimonio inicio -->
+        <section id="Testimonial">
+          <div class="testimonial-wrap">
+          <div class="container">
+            <div class="block-heading">
+              <h2>Testimonio</h2>
+            </div>
+            <ul class="testimonial-slider">
+              <li>Aarón Rosas, 26 AÑOS
+              <p><i>"¡Atencion excelente, muy profesionales! Desde la primera vez que he venido me han tratado super bien,  muy recomendados."</i></p></li>
+              <li>Germán Martinez, 65 AÑOS
+				<p><i>"Llevo más de 8 años atendiéndome en esta increíble barbería y estoy más que feliz porque siempre me dejan con el mejor estilo de temporada."</i></p></li>
+              <li>Gianmarco Azalde, 40 AÑOS
+				<p><i>"Fuí al local a pedir el servicio, el corte me quedó tan bien que me animé le corten a mis 2 hijos, gran ahorro de tiempo y excelente calidad"</i></li>
+            </ul>
+          </div>
+        </div>
+        </section>
+       <!-- Testimonio fin -->
+       
+        <!-- Reservar cita inicio -->
+        <section id="ContactUs"><br>
+            <div class="contact-container">
+                <h3 class="contact-title">Reserve su cita</h3>
+                <div class="container contact-outer-wrapper">
+                    <div class="form-wrap">
+                        <p class="add-title">Ingrese sus datos</p>
+                        <form action="" method="post">
+                            <div class="fname floating-label">
+                                <input type="text" class="floating-input" name="txtnombres" id="full-name-field" placeholder/>
+                                <label for="full-name-field">Nombres</label>
+                            </div>
+                            <div class="fname floating-label">
+                                <input type="text" class="floating-input" name="txtApellido_paterno" id="full-name-field" placeholder/>
+                                <label for="mail-field">Apellido Paterno</label>
+                            </div>
+                            <div class="fname floating-label">
+                                <input type="text" class="floating-input" name="txtApellido_materno" id="full-name-field" placeholder />
+                                <label for="contact-us-field">Apellido Materno</label>
+                            </div>
+                            <div class="company floating-label">
+                                <input type="number" class="floating-input" name="txtDNI" id="full-name-field" placeholder/>
+                                <label for="company-field">Número de DNI</label>
+                            </div>
+                            <div class="fname floating-label">
+                                <input type="number" class="floating-input" name="txtNumero" id="full-name-field" placeholder/>
+                                <label for="full-name-field">Número de contacto</label>
+                            </div>
+                            <div class="fname floating-label">
+                                <select class="floating-input" name="txtservicios" id="full-name-field" required>
+                                    <option selected disabled value="" class="ser">Servicios</option>
+                                    <option  value="1" class="ser">Corte de Cabello</option>
+                                    <option  value="2" class="ser">Teñido de Cabello</option>
+                                    <option  value="3" class="ser">Trenzas</option>
+                                    <option  value="4" class="ser">Afeitado de Barba</option>
+                                    <option  value="5" class="ser">Lavado de Cabello</option>
+                                    <option  value="6" class="ser">Limpieza Facial</option>
+                                   
+                                  </select>
+                            </div>
+                            <div class="fname floating-label">
+                                <input type="date" class="floating-input" name="txtdia" id="full-name-field" placeholder/>
+                                <label for="mail-field"></label>
+                            </div>
+                            <div class="fname floating-label">
+                                <input type="time" class="floating-input" name="txthora" id="full-name-field" placeholder/>
+                                <label for="mail-field"></label>
+                            </div>
+                            
+                            <div><%=mensaje==null?"":mensaje%></div>
+                            
+                            <div class="submit-btn">
+                                <button type="submit">Reservar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Reservar cita fin -->
+        
+        <!-- Contáctenos -->
+        <section id="About">
+            <div class="container" >
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 ">
+                    <h2>Conócenos</h2>
+                    <p align="justify">Somos una empresa emprendedora, donde nuestro principal objetivo es brindar 
+		un servicio especializado en barbería y asesoría de imagen con profesionalismo 
+		y responsabilidad. En el mes de marzo del 2010 decidimos iniciar este bonito 
+		proyecto, una barbería clásica con una decoración moderna  y elegante. 
+		Estamos seguros que como empresa a largo plazo inspiraremos momentos de 
+		felicidad, lograremos crear valor y marcar la diferencia.</p> 
+		
+		<p align="justify">- Es primordial para nosotros tener un excelente ambiente de trabajo, para que 
+		cada día nuestros trabajadores den lo mejor de si mismos.<br>
+		- Ofrecer una variedad de servicios y productos de calidad donde el cliente 
+		se sienta satisfecho.<br>
+		- Como sociedad, ser organizados y dinámicos.</p>
+		
+		<p align="justify">Diaz BarberShop como empresa se caracteriza por ser responsables 
+		y transparentes con su trabajo. Estamos comprometidos con la mente y el corazón 
+		con este proyecto para así lograr la excelencia.</p>
+				</div>
+                <div class="col-md-6 about-wrapper" ><img src="images/conocemos.jpg" alt=""></div>
+            </div>
+        </div>
+        </section>
+		<!-- Contáctenos fin -->
+		
+		<!-- Footer inicio -->
+    <footer>
+      <hr>
+      <div class="container">
+        <div class="row d-flex justify-content-around">
+          
+
+          <div class="col-md-4">
+           <h5 class="my-4">Contáctenos :<hr></h5>
+               <b>Dirección:</b>  Av. El Olivar 280 Urb. El Cóndor - Callao<br><br>
+               <b>Celular:</b> <a href="tel:+51 963214578">+51 963 214 578</a>
+       		   <br><br><br>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="my-4">Nuestras Redes :<hr></h5>
+            	<b>Facebook: </b><a href="https://www.facebook.com/diazbarbershop2022" target="_blank">diazbarbershop2022</a><br><br>
+                <b>Instagram: </b><a href="https://www.instagram.com/diazbarbershop2022/" target="_blank">diazbarbershop2022</a><br><br>
+                <b>Tiktok: </b><a href="https://www.tiktok.com/@diazbarbershop2022" target="_blank">diazbarbershop2022</a>
+                <br><br><br>
+               
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="my-4">Ubíquenos :<hr></h5>
+    		<div class="text-center">
+    			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.6070996380495!2d-77.08902617076525!3d-12.01400068773777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ace346d54d56c97!2zMTLCsDAwJzUwLjQiUyA3N8KwMDUnMTguNSJX!5e0!3m2!1ses-419!2spe!4v1660621078765!5m2!1ses-419!2spe" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.whatismyip-address.com/divi-discount/"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+    		</div>
+           </div>
+          </div>
+         </div>
+          <br>
+   <hr>
+	<div class="footer-copyright text-center py-3">© 2022 Díaz Barbershop - Todos los derechos reservados</div>
+   <hr>
+
+ </footer>
+	<!-- Footer fin -->
+    </section>
+</body>
+
+</html>
